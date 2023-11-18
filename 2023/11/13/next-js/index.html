@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="next.js, Hexo">
+    <meta name="keywords" content="next.js, Yol">
     <meta name="description" content="next.jspages:存放页面
 public：存放静态图片
 styles:存放样式 ，局部样式 XX.module.css
@@ -21,7 +21,7 @@ styles:存放样式 ，局部样式 XX.module.css
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>next.js | Hexo</title>
+    <title>next.js | Yol</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -68,7 +68,7 @@ styles:存放样式 ，局部样式 XX.module.css
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">Hexo</span>
+                    <span class="logo-span">Yol</span>
                 </a>
             </div>
             
@@ -83,28 +83,6 @@ styles:存放样式 ，局部样式 XX.module.css
       <i class="fas fa-home" style="zoom: 0.6;"></i>
       
       <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>标签</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>分类</span>
     </a>
     
   </li>
@@ -127,17 +105,6 @@ styles:存放样式 ，局部样式 XX.module.css
       <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
       
       <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
     </a>
     
   </li>
@@ -172,7 +139,7 @@ styles:存放样式 ，局部样式 XX.module.css
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">Hexo</div>
+        <div class="logo-name">Yol</div>
         <div class="logo-desc">
             
             Never really desperate, only the lost of the soul.
@@ -195,28 +162,6 @@ styles:存放样式 ，局部样式 XX.module.css
         
         <li class="m-nav-item">
 	  
-		<a href="/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
 		<a href="/archives" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-archive"></i>
@@ -233,17 +178,6 @@ styles:存放样式 ，局部样式 XX.module.css
 			    <i class="fa-fw fas fa-user-circle"></i>
 			
 			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
 		</a>
           
         </li>
@@ -556,13 +490,13 @@ styles:存放样式 ，局部样式 XX.module.css
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/11/18/nvm/">
+                <a href="/2023/11/18/nvm-1/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="nvm">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">nvm</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1024,6 +958,14 @@ $(function () {
     
 
     <!-- 鼠标星星特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/star.js"><\/script>');
+            }
+        </script>
     
 
      
