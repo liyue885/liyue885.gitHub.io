@@ -1,0 +1,1694 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="js2, Yol">
+    <meta name="description" content="js2刷编程语言：js
+标记语言：html
+计算机组成
+硬件
+cpu
+硬盘 ：永久存储
+内存： 暂时存储
+输出设备
+输入设备
+
+
+软件
+系统软件
+应用软件
+
+
+
+数据存储单位12bit&amp;lt;byte&amp;lt;kb&amp;lt;Mb&amp;lt;&amp;lt;">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>js2 | Yol</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+
+
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/css/my.css">
+<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/css/post.css">
+
+
+
+
+    
+        <link rel="stylesheet" type="text/css" href="/css/reward.css">
+    
+
+
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Yol</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Yol</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">js2</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-12-10
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="js2刷"><a href="#js2刷" class="headerlink" title="js2刷"></a>js2刷</h1><p>编程语言：js</p>
+<p>标记语言：html</p>
+<h5 id="计算机组成"><a href="#计算机组成" class="headerlink" title="计算机组成"></a>计算机组成</h5><ol>
+<li>硬件<ul>
+<li>cpu</li>
+<li>硬盘 ：永久存储</li>
+<li>内存： 暂时存储</li>
+<li>输出设备</li>
+<li>输入设备</li>
+</ul>
+</li>
+<li>软件<ul>
+<li>系统软件</li>
+<li>应用软件</li>
+</ul>
+</li>
+</ol>
+<h5 id="数据存储单位"><a href="#数据存储单位" class="headerlink" title="数据存储单位"></a>数据存储单位</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">bit&lt;byte&lt;kb&lt;<span class="title class_">Mb</span>&lt;&lt;<span class="variable constant_">GB</span>&lt;<span class="variable constant_">TB</span>&lt;...</span><br><span class="line">位&lt;字节&lt;千字节&lt;兆字节&lt;吉字节&lt;太字节</span><br></pre></td></tr></table></figure>
+
+<h5 id="js组成"><a href="#js组成" class="headerlink" title="js组成"></a>js组成</h5><ol>
+<li>ecmascript(规定js基础语法)</li>
+<li>bom（浏览器对象模型）</li>
+<li>dom（文档对象模型）</li>
+</ol>
+<h5 id="声明多个变量"><a href="#声明多个变量" class="headerlink" title="声明多个变量"></a>声明多个变量</h5><p>同时声明多个变量，只需要写一个var,多个变量名之间使用英文逗号隔开。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> name=<span class="string">&#x27;lisa&#x27;</span>,</span><br><span class="line">    age=<span class="number">18</span>,</span><br><span class="line">    sex=<span class="string">&#x27;女&#x27;</span>；</span><br></pre></td></tr></table></figure>
+
+<h5 id="声明变量的特殊情况"><a href="#声明变量的特殊情况" class="headerlink" title="声明变量的特殊情况"></a>声明变量的特殊情况</h5><table>
+<thead>
+<tr>
+<th>说明</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>只声明，不赋值</td>
+<td>undefine</td>
+</tr>
+<tr>
+<td>不声明，不赋值，直接使用</td>
+<td>报错</td>
+</tr>
+<tr>
+<td>不声明 只赋值（js可以，变成全局变量）</td>
+<td>正常显示</td>
+</tr>
+</tbody></table>
+<h5 id="命名的规范"><a href="#命名的规范" class="headerlink" title="命名的规范"></a>命名的规范</h5><ul>
+<li>有字母数字下划线美元符号组成</li>
+<li>严格区分大小写</li>
+<li>不能以数字开头</li>
+<li>不能以关键字命名</li>
+<li>变量名得有意义</li>
+<li>遵守驼峰命名法</li>
+<li>推荐 翻译网站 爱词霸 有道</li>
+</ul>
+<h5 id="数字型进制"><a href="#数字型进制" class="headerlink" title="数字型进制"></a>数字型进制</h5><p>在js中八进制前面＋0，十六进制前面＋0x</p>
+<h5 id="了解数字类型"><a href="#了解数字类型" class="headerlink" title="了解数字类型"></a>了解数字类型</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Number</span>.<span class="property">MAX_VALUE</span><span class="comment">//数字型的最大值</span></span><br><span class="line"><span class="title class_">Number</span>.<span class="property">MIN_VALUE</span> <span class="comment">//数字型的最小值</span></span><br><span class="line"><span class="title class_">Number</span>.<span class="property">MAX_VALUE</span>*<span class="number">2</span> <span class="title class_">Infinity</span> 无穷大</span><br><span class="line"><span class="title class_">Number</span>.<span class="property">MIN_VALUE</span>*<span class="number">2</span> -<span class="title class_">Infinity</span> 无穷小</span><br></pre></td></tr></table></figure>
+
+<h5 id="数据类型判断"><a href="#数据类型判断" class="headerlink" title="数据类型判断"></a>数据类型判断</h5><ol>
+<li>isNaN() 判断是否是数字</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">isNaN</span>(<span class="number">12</span>) <span class="comment">//返回布尔值</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="js转义字符"><a href="#js转义字符" class="headerlink" title="js转义字符"></a>js转义字符</h5><p>要写在引号里面</p>
+<table>
+<thead>
+<tr>
+<th>转义符</th>
+<th>解释说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\n</td>
+<td>换行符</td>
+</tr>
+<tr>
+<td>\</td>
+<td>斜杠\</td>
+</tr>
+<tr>
+<td>\ ‘</td>
+<td>单引号</td>
+</tr>
+<tr>
+<td>\ “</td>
+<td>双引号</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>tab缩进</td>
+</tr>
+<tr>
+<td>\b</td>
+<td>空格</td>
+</tr>
+</tbody></table>
+<h5 id="undefined和null加数字区别"><a href="#undefined和null加数字区别" class="headerlink" title="undefined和null加数字区别"></a>undefined和null加数字区别</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">undefined</span>+<span class="number">1</span> <span class="comment">//NAN</span></span><br><span class="line"></span><br><span class="line"><span class="literal">null</span>+<span class="number">1</span> <span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="数据转换"><a href="#数据转换" class="headerlink" title="数据转换"></a>数据转换</h5><ol>
+<li><p>转字符串</p>
+<ul>
+<li>toString() &#x2F;&#x2F;变量点toString(）</li>
+<li>string() &#x2F;&#x2F;string(变量)</li>
+<li>＋“” &#x2F;&#x2F;加空字符串</li>
+</ul>
+</li>
+<li><p>转数字</p>
+<ul>
+<li>number()</li>
+<li>parseInt() &#x2F;&#x2F;转换整数数值 ，只取开头的数字</li>
+<li>parseFloat() &#x2F;&#x2F;转换成浮点数数值，会保留小数点，只取开头的数字</li>
+<li>&#x2F; *-</li>
+</ul>
+</li>
+<li><p>转布尔值</p>
+<ul>
+<li>0、NaN 、null、undefined、空字符串 。转换 布尔值是false。</li>
+</ul>
+</li>
+</ol>
+<h5 id="前置递增或递减-后置递增或递减（先返回值后变量自加或减）"><a href="#前置递增或递减-后置递增或递减（先返回值后变量自加或减）" class="headerlink" title="前置递增或递减  后置递增或递减（先返回值后变量自加或减）"></a>前置递增或递减  后置递增或递减（先返回值后变量自加或减）</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> age=<span class="number">10</span></span><br><span class="line">++age <span class="comment">//11  ==age=age+1</span></span><br><span class="line">--age <span class="comment">//9  ==age=age-1</span></span><br><span class="line"></span><br><span class="line">age++ +<span class="number">10</span> <span class="comment">//先返回10 加上10等于二十 age10+1 //11</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(age) <span class="comment">//11</span></span><br><span class="line">单独用一致 ，前置加一和后置加一</span><br><span class="line">练习</span><br><span class="line"><span class="keyword">let</span> a=<span class="number">10</span></span><br><span class="line">++a   <span class="comment">//11</span></span><br><span class="line">b=++a+<span class="number">2</span> <span class="comment">//12+2</span></span><br><span class="line"><span class="title function_">log</span>(b) <span class="comment">//14</span></span><br><span class="line"><span class="keyword">let</span> c=<span class="number">10</span></span><br><span class="line">c++  <span class="comment">// c++=11 c=11</span></span><br><span class="line"><span class="keyword">let</span> d=c++ +<span class="number">2</span>  <span class="comment">//c++=11 c=12</span></span><br><span class="line"><span class="title function_">log</span>(d) <span class="comment">//13</span></span><br><span class="line"><span class="keyword">let</span> e=<span class="number">10</span></span><br><span class="line"><span class="keyword">let</span> f=e++ + ++e <span class="comment">//e++=10 e=11 ++e=12</span></span><br><span class="line"><span class="title function_">log</span>(f)<span class="comment">//22</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="逻辑与短路运算-逻辑中断"><a href="#逻辑与短路运算-逻辑中断" class="headerlink" title="逻辑与短路运算(逻辑中断)"></a>逻辑与短路运算(逻辑中断)</h5><p>如果表达式1 结果为真则返回表达式2；如果表达式1为假，那么返回表达式1</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">log</span>(<span class="number">123</span> &amp;&amp; <span class="number">456</span>) <span class="comment">//123</span></span><br><span class="line"><span class="title function_">log</span>(<span class="number">0</span> &amp;&amp; <span class="number">123</span>) <span class="comment">//0</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="逻辑或短路运算"><a href="#逻辑或短路运算" class="headerlink" title="逻辑或短路运算"></a>逻辑或短路运算</h5><p>如果表达式1结果为真 则返回的是表达式1 如果表达式1结果为假，则返回表达式2</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">log</span>(<span class="number">123</span> || <span class="number">456</span>) <span class="comment">//123</span></span><br><span class="line"><span class="title function_">log</span>(<span class="number">0</span>||<span class="number">456</span>||<span class="number">789</span>) <span class="comment">//456</span></span><br><span class="line"><span class="keyword">const</span> c=<span class="number">0</span></span><br><span class="line"><span class="title function_">log</span>(<span class="number">123</span> || c++)</span><br><span class="line"><span class="title function_">log</span>(c) <span class="comment">//0</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="switch和if的区别"><a href="#switch和if的区别" class="headerlink" title="switch和if的区别"></a>switch和if的区别</h5><ul>
+<li>switch处理case比较确定值的情况，而if比较灵活，常用于范围判断。</li>
+<li>switch语句进行条件判断后直接执行的条件语句，效率更高，而if有几种条件，就得判断多次。</li>
+<li>分支较少if,反之用switch。</li>
+</ul>
+<h5 id="循环种类"><a href="#循环种类" class="headerlink" title="循环种类"></a>循环种类</h5><ul>
+<li><p>for 计数</p>
+</li>
+<li><p>while（不规范，易死循环）复杂判断</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(条件表达式)&#123;</span><br><span class="line"><span class="comment">//循环体</span></span><br><span class="line">    <span class="comment">//里面应该也有计数器，初始化变量，也应该有操作表达式，完成计时器的更新，防止死循环。</span></span><br><span class="line">      &#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>do……while 先执行循环体再判断</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">    <span class="comment">//循环体</span></span><br><span class="line">&#125;<span class="keyword">while</span>(条件表达式)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h5 id="continue关键字"><a href="#continue关键字" class="headerlink" title="continue关键字"></a>continue关键字</h5><p>退出本次循环，执行剩余次循环。</p>
+<h5 id="break关键字"><a href="#break关键字" class="headerlink" title="break关键字"></a>break关键字</h5><p>遇到break就跳出整个循环。</p>
+<h5 id="return关键字"><a href="#return关键字" class="headerlink" title="return关键字"></a>return关键字</h5><p>终止函数</p>
+<p>只能返回一个值，如果多个就返回的最后一个。</p>
+<h5 id="断点调试"><a href="#断点调试" class="headerlink" title="断点调试"></a>断点调试</h5><p>浏览器中按F12–&gt; sources –&gt;找到需要调试的文件–&gt;在程序的某一行设置断点Watch:监视，通过watch可以监视变量的值的变化，非常的常用。</p>
+<h5 id="函数返回值"><a href="#函数返回值" class="headerlink" title="函数返回值"></a>函数返回值</h5><p>函数没有返回值 就返回undefined</p>
+<h5 id="arguments伪数组"><a href="#arguments伪数组" class="headerlink" title="arguments伪数组"></a>arguments伪数组</h5><h6 id="什么是伪数组"><a href="#什么是伪数组" class="headerlink" title="什么是伪数组"></a>什么是伪数组</h6><ul>
+<li><p>伪数组并不是真正意义上的数组l</p>
+</li>
+<li><p>具有数组的length属性</p>
+</li>
+<li><p>按照索引的方式进行存储的</p>
+</li>
+<li><p>它没有真正数组的一些方法 pop() push()等等</p>
+</li>
+</ul>
+<h5 id="冒泡排序函数封装"><a href="#冒泡排序函数封装" class="headerlink" title="冒泡排序函数封装"></a>冒泡排序函数封装</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">sort</span>(<span class="params">arr</span>)&#123;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;arr.<span class="property">length</span>-<span class="number">1</span>;i++)&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> j=<span class="number">0</span>;j&lt;arr.<span class="property">length</span>-i-<span class="number">1</span>;j++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(arr[j]&gt;arr[j+<span class="number">1</span>])&#123;</span><br><span class="line">            <span class="keyword">var</span> temp=arr[j]</span><br><span class="line">            arr[j]=arr[j+<span class="number">1</span>]</span><br><span class="line">            arr[j+<span class="number">1</span>]=temp</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">    <span class="keyword">return</span> arr</span><br><span class="line">    &#125;</span><br><span class="line">sort ([<span class="number">1</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">4</span>])</span><br></pre></td></tr></table></figure>
+
+<h5 id="判断是否是闰年"><a href="#判断是否是闰年" class="headerlink" title="判断是否是闰年"></a>判断是否是闰年</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">isRunYear</span>(<span class="params">year</span>)&#123;</span><br><span class="line">    <span class="keyword">var</span> flag=<span class="literal">false</span></span><br><span class="line">    <span class="keyword">if</span>(year%<span class="number">4</span> ==<span class="number">0</span> &amp;&amp; year%<span class="number">100</span>!=<span class="number">0</span> || year%<span class="number">400</span>==<span class="number">0</span>)&#123;</span><br><span class="line">        flag=<span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> flag</span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">isRunYear</span>(<span class="number">2000</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="函数的声明方式"><a href="#函数的声明方式" class="headerlink" title="函数的声明方式"></a>函数的声明方式</h5><p>声明式：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">关键字自定义函数（命名函数）</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">a</span>(<span class="params"></span>)&#123;&#125;</span><br><span class="line"><span class="title function_">a</span>()</span><br></pre></td></tr></table></figure>
+
+
+
+<p>表达式：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">匿名函数</span><br><span class="line"><span class="keyword">var</span> fn=<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">fn</span>()</span><br><span class="line"><span class="comment">//fn 变量名，不是函数名</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h5><p>变量的使用范围，叫作用域。减少命名冲突。</p>
+<h5 id="js的作用域"><a href="#js的作用域" class="headerlink" title="js的作用域"></a>js的作用域</h5><p>全局作用域：整个script标签或者一个单独的js文件</p>
+<p>局部作用域：函数内部，变量只在函数内部起作用效果。</p>
+<h5 id="变量作用域"><a href="#变量作用域" class="headerlink" title="变量作用域"></a>变量作用域</h5><p>全局变量：在全局作用域下的变量，在全局下都可以使用。</p>
+<p>注：如果在函数内部没有声明直接赋值的变量也叫全局变量。</p>
+<ul>
+<li>全局变量只有在浏览器关闭时才销毁，消耗内存。</li>
+</ul>
+<p>局部变量：在局部作用域下或者函数内部使用的变量。</p>
+<p>注：函数的形参也可以是一个局部变量。</p>
+<ul>
+<li>局部变量代码执行完毕，自动销毁，节省内存空间。</li>
+</ul>
+<h5 id="块级作用域"><a href="#块级作用域" class="headerlink" title="块级作用域"></a>块级作用域</h5><p>{}包裹的就是作用域，js没有块级作用域</p>
+<h5 id="作用域链"><a href="#作用域链" class="headerlink" title="作用域链"></a>作用域链</h5><p>内部函数访问外部函数的变量，采取的是链式查找的方式来决定取哪个值，这个结构就成为作用域链。（就近原则）</p>
+<h5 id="预解析"><a href="#预解析" class="headerlink" title="预解析"></a>预解析</h5><p>浏览器先预解析在执行</p>
+<ol>
+<li>js引擎会把js里面所有的var还有function提升当前作用域的最前面</li>
+<li>预解析分为变量预解析（变量提升）和函数预解析（函数提升）</li>
+<li>变量提升就是把所有的变量声明提升到当前的作用域最前面  不提升赋值操作。</li>
+<li>函数提升，就是把所有函数的声明提升，但是不调用函数。</li>
+</ol>
+<h5 id="作用域练习经典案例（函数作用域中没有var声明当全局变量看）"><a href="#作用域练习经典案例（函数作用域中没有var声明当全局变量看）" class="headerlink" title="作用域练习经典案例（函数作用域中没有var声明当全局变量看）"></a>作用域练习经典案例（函数作用域中没有var声明当全局变量看）</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">fn</span>()</span><br><span class="line"><span class="title function_">log</span>(a)</span><br><span class="line"><span class="title function_">log</span>(b)</span><br><span class="line"><span class="title function_">log</span>(c)</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">fn</span>(<span class="params"></span>)&#123;</span><br><span class="line"><span class="keyword">var</span> a=b=c=<span class="number">9</span></span><br><span class="line"><span class="title function_">log</span>(a)</span><br><span class="line"><span class="title function_">log</span>(b)</span><br><span class="line"><span class="title function_">log</span>(c)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">////// 相当于以下代码</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">fn</span>(<span class="params"></span>)&#123;</span><br><span class="line"><span class="keyword">var</span> a;</span><br><span class="line">    a-b=c=<span class="number">9</span> <span class="comment">// 函数作用域中没有var声明当全局变量看</span></span><br><span class="line">    </span><br><span class="line"><span class="title function_">log</span>(a) <span class="comment">//9</span></span><br><span class="line"><span class="title function_">log</span>(b) <span class="comment">//9</span></span><br><span class="line"><span class="title function_">log</span>(c) <span class="comment">//9</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">fn</span>()</span><br><span class="line"><span class="title function_">log</span>(a) <span class="comment">//报错</span></span><br><span class="line"><span class="title function_">log</span>(b) <span class="comment">//9</span></span><br><span class="line"><span class="title function_">log</span>(c) <span class="comment">//9</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="创建对象的方法"><a href="#创建对象的方法" class="headerlink" title="创建对象的方法"></a>创建对象的方法</h5><ol>
+<li><p>字面量创建 ———{}</p>
+</li>
+<li><p>new Object()</p>
+</li>
+<li><p>构造函数创建对象 （可一次创建多个对象）</p>
+<p>构造函数：就是把对面里面一些相同的属性和方法抽象出来封装到函数里面。</p>
+<ul>
+<li>函数名第一个字母大写</li>
+<li>不需要return 就可以返回结果</li>
+<li>我们的属性和方法必须要this</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//语法</span></span><br><span class="line">构造函数：泛指的某一大类</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">Fn</span>(<span class="params">name,age,sex</span>)&#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">name</span>=name</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">age</span>=age</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">sex</span>=sex</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">say</span>=<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">        <span class="title function_">log</span>(<span class="string">&#x27;hahah&#x27;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">对象：特指的某一个</span><br><span class="line"><span class="keyword">var</span> one=<span class="keyword">new</span> <span class="title class_">Fn</span>(<span class="string">&#x27;lisa&#x27;</span>,<span class="number">18</span>,<span class="string">&#x27;女&#x27;</span>) <span class="comment">//可批量生成</span></span><br><span class="line"><span class="keyword">var</span> two=<span class="keyword">new</span> <span class="title class_">Fn</span>(<span class="string">&#x27;yol&#x27;</span>,<span class="number">18</span>,<span class="string">&#x27;女&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h6 id="new-做了什么？"><a href="#new-做了什么？" class="headerlink" title="new 做了什么？"></a>new 做了什么？</h6><ol>
+<li>创建了一个空对象</li>
+<li>this就会指向刚才创建的空对象</li>
+<li>执行构造函数里面的代码，给这个新对象添加属性和方法。</li>
+<li>返回这个新对象（所以构造函数里面不需要return）</li>
+</ol>
+</li>
+</ol>
+<h5 id="遍历对象for-in"><a href="#遍历对象for-in" class="headerlink" title="遍历对象for in"></a>遍历对象for in</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj=&#123;</span><br><span class="line">    <span class="attr">name</span>:<span class="string">&#x27;lisa&#x27;</span>,</span><br><span class="line">    <span class="attr">age</span>:<span class="number">18</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> k <span class="keyword">in</span> obj)&#123;</span><br><span class="line">    <span class="title function_">log</span>(obj[k]) <span class="comment">//属性值</span></span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+
+<h5 id="封装时分秒"><a href="#封装时分秒" class="headerlink" title="封装时分秒"></a>封装时分秒</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">getTime</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="keyword">var</span> time=<span class="keyword">new</span> <span class="title class_">Date</span>()</span><br><span class="line">    <span class="keyword">var</span> h=time.<span class="title function_">getHours</span>()</span><br><span class="line">    h=h&lt;<span class="number">10</span>?<span class="string">&#x27;0&#x27;</span>+<span class="attr">h</span>:h</span><br><span class="line">    <span class="keyword">var</span> m=time.<span class="title function_">getMinutes</span>()</span><br><span class="line">        m=m&lt;<span class="number">10</span>?<span class="string">&#x27;0&#x27;</span>+<span class="attr">m</span>:m</span><br><span class="line">    <span class="keyword">var</span> s=time.<span class="title function_">getSeconds</span>()</span><br><span class="line">        s=s&lt;<span class="number">10</span>?<span class="string">&#x27;0&#x27;</span>+<span class="attr">s</span>:s</span><br><span class="line">    <span class="keyword">return</span> h+<span class="string">&quot;:&quot;</span>+m+<span class="string">&quot;:&quot;</span>+s</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="获取毫秒数：时间戳（毫秒数不会重复）"><a href="#获取毫秒数：时间戳（毫秒数不会重复）" class="headerlink" title="获取毫秒数：时间戳（毫秒数不会重复）"></a>获取毫秒数：时间戳（毫秒数不会重复）</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//方法一</span></span><br><span class="line"><span class="title function_">valueOf</span>()\<span class="title function_">getTime</span>()</span><br><span class="line"><span class="comment">//方法二</span></span><br><span class="line"><span class="keyword">var</span> data=+<span class="keyword">new</span> <span class="title class_">Date</span>()</span><br><span class="line"><span class="comment">//方法三</span></span><br><span class="line"><span class="title class_">Date</span>.<span class="title function_">now</span>() <span class="comment">//h5新增的</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="倒计时案例"><a href="#倒计时案例" class="headerlink" title="倒计时案例"></a>倒计时案例</h5><p>分析</p>
+<p>核心算法∶输入的时间减去现在的时间就是剩余的时间，即倒计时，但是不能拿着时分秒相减，比如05分减去25分，结果会是负数的。</p>
+<p>用时间戳来做。用户输入时间总的毫秒数减去现在时间的总的毫秒数，得到的就是剩余时间的毫秒数。</p>
+<p>把剩余时间总的毫秒数转换为天、时、分、秒（时间戳转换为时分秒)<br>转换公式如下∶<br> d &#x3D; parselnt(总秒数&#x2F;60&#x2F;60&#x2F;24)&#x2F;&#x2F;计算天数</p>
+<p>h &#x3D; parselnt(总秒数&#x2F;60&#x2F;60%24)1&#x2F;计算小时</p>
+<p>m &#x3D; parselnt(总秒数&#x2F;60%60);1&#x2F;计算分数</p>
+<p>s &#x3D; parselnt(总秒数%60);&#x2F;&#x2F;计算当前秒数</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">countDown</span>(<span class="params">time</span>) i</span><br><span class="line"><span class="keyword">var</span> nowTime = +<span class="keyword">new</span> <span class="title class_">Date</span>();<span class="number">1</span>/返回的是当前时间总的毫秒数</span><br><span class="line"><span class="keyword">var</span> inputTime = +<span class="keyword">new</span> <span class="title class_">Date</span>(time);l/返回的是用户输入时间总的毫秒数<span class="keyword">var</span> times = (inputTime - nowTime)/ <span class="number">1000</span>; <span class="comment">// times是剩余时间总的秒数</span></span><br><span class="line"><span class="keyword">var</span> d = <span class="built_in">parseInt</span>(times / <span class="number">60</span> / <span class="number">60</span> / <span class="number">24</span>);<span class="comment">//天</span></span><br><span class="line">d = d &lt; <span class="number">10</span> ? <span class="string">&#x27;0’+d : d;</span></span><br><span class="line"><span class="string">var h = parseInt(times / 6e / 60 % 24);//时</span></span><br><span class="line"><span class="string">h = h &lt; 10  &#x27;</span>e<span class="string">&#x27; +h : h;</span></span><br><span class="line"><span class="string">var m = parseInt(times / 6e % 60);//分</span></span><br><span class="line"><span class="string">m= m&lt; 10 ? &#x27;</span><span class="number">0</span>’+m : m;</span><br><span class="line"><span class="keyword">var</span> s = <span class="built_in">parseInt</span>(times % <span class="number">60</span>);<span class="comment">//当前的秒</span></span><br><span class="line">s= s&lt; <span class="number">10</span> ? <span class="string">&#x27;e&#x27;</span>+s : s;</span><br><span class="line"><span class="keyword">return</span> d +‘天<span class="string">&#x27;+h+&quot;时’+m+‘分’+S +‘秒&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">countDown</span>( <span class="string">&quot; 2019-5-1 18:0e:00&quot;</span> ));</span><br><span class="line"><span class="keyword">var</span> date = <span class="keyword">new</span> <span class="title class_">Date</span>();</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(date);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="检测是否是数组"><a href="#检测是否是数组" class="headerlink" title="检测是否是数组"></a>检测是否是数组</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr=[]</span><br><span class="line">arr <span class="keyword">instanceof</span> <span class="title class_">Array</span> <span class="comment">//true</span></span><br><span class="line"><span class="title class_">Array</span>.<span class="title function_">isArray</span>(arr) <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="根据位置返回字符"><a href="#根据位置返回字符" class="headerlink" title="根据位置返回字符"></a>根据位置返回字符</h5><table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+<th>使用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>charAt(index)</td>
+<td>返回指定位置的字符</td>
+<td>str.charAt(0)</td>
+</tr>
+<tr>
+<td>charCodeAt()</td>
+<td>获取指定位置处字符的ASCLL码</td>
+<td>str.charCodeAt(0)</td>
+</tr>
+<tr>
+<td>str[index]</td>
+<td>获取指定位置处字符</td>
+<td>h5 ie8+支持</td>
+</tr>
+</tbody></table>
+<h5 id="计算次数出现最多的字符"><a href="#计算次数出现最多的字符" class="headerlink" title="计算次数出现最多的字符"></a>计算次数出现最多的字符</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;abcoefoxyozzopp&#x27;;</span></span><br><span class="line"><span class="string">var o= &#123;&#125;;</span></span><br><span class="line"><span class="string">for (var i = e; i &lt; str.length; i++) &#123;</span></span><br><span class="line"><span class="string">var chars = str.charAt(i); // chars是字符串的每一个字符</span></span><br><span class="line"><span class="string">    if (o[chars]) &#123; // o[chars]得到的是属性值</span></span><br><span class="line"><span class="string">o[chars]++;</span></span><br><span class="line"><span class="string">else &#123;o[chars] = 1;&#125;&#125;</span></span><br><span class="line"><span class="string">console.log(o);</span></span><br><span class="line"><span class="string"></span></span><br></pre></td></tr></table></figure>
+
+<h5 id="转换大小写"><a href="#转换大小写" class="headerlink" title="转换大小写"></a>转换大小写</h5><p>toUpperCase()&#x2F;&#x2F;转换大写</p>
+<p>toLowerCase() &#x2F;&#x2F;转换小写</p>
+<h3 id="dom"><a href="#dom" class="headerlink" title="dom"></a>dom</h3><p>console.dir() &#x2F;&#x2F;打印元素对象</p>
+<h6 id="获取body和html元素"><a href="#获取body和html元素" class="headerlink" title="获取body和html元素"></a>获取body和html元素</h6><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">document</span>.<span class="property">body</span></span><br><span class="line"><span class="variable language_">document</span>.<span class="property">documentElement</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="获取自定义属性"><a href="#获取自定义属性" class="headerlink" title="获取自定义属性"></a>获取自定义属性</h6><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">element.<span class="title function_">getAttribute</span>(<span class="string">&#x27;data-index&#x27;</span>)</span><br><span class="line"><span class="variable constant_">H5</span>新增的element.<span class="property">dataset</span>.<span class="property">index</span>或者element.<span class="property">dataset</span>[<span class="string">&#x27;index&#x27;</span>] <span class="comment">//ie11才支持 只能获取data开头的</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="兄弟节点"><a href="#兄弟节点" class="headerlink" title="兄弟节点"></a>兄弟节点</h6><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">node.<span class="property">nextSibling</span> <span class="comment">//下一个节点，包括文本节点</span></span><br><span class="line">node.<span class="property">nextElementSibling</span> <span class="comment">//下一个元素节点 ,ie9以上才可以</span></span><br><span class="line">node.<span class="property">previousElementSibling</span> <span class="comment">//返回当前元素下一个兄弟节点，ie9以上才可以</span></span><br></pre></td></tr></table></figure>
+
+<p>阻止链接跳转</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=<span class="string">&quot;javascript:;&quot;</span> &gt;&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id="三种动态创建元素区别"><a href="#三种动态创建元素区别" class="headerlink" title="三种动态创建元素区别"></a>三种动态创建元素区别</h5><p>document.write()<br>element.innerHTM<br>document.createElement ()</p>
+<p>区别</p>
+<ol>
+<li>document.write是直接将内容写入页面的内容流，但是文档流执行完毕，则它会导致页面全部重绘</li>
+<li>innerHTML是将内容写入某个DOM节点，不会导致页面全部重绘</li>
+<li>innerHTML创建多个元素效率更高(不要拼接字符串，采取数组形式拼接），结构稍微复杂</li>
+<li>createElement()创建多个元素效率稍低一点点，但是结构更清晰<br>总结:不同浏览器下，innerHTM效率要比 creatElement高</li>
+</ol>
+<h5 id="解绑事件-移除事件"><a href="#解绑事件-移除事件" class="headerlink" title="解绑事件&#x2F;移除事件"></a>解绑事件&#x2F;移除事件</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//方法一</span></span><br><span class="line">elementNode.事件=<span class="literal">null</span></span><br><span class="line"><span class="comment">//方法二</span></span><br><span class="line">elementNode.<span class="title function_">removeEventListener</span>(<span class="string">&#x27;事件&#x27;</span>，函数名)</span><br><span class="line"><span class="comment">//方法三</span></span><br><span class="line">elementNode.<span class="title function_">datachEvent</span>(事件，函数名)</span><br></pre></td></tr></table></figure>
+
+<h5 id="事件流"><a href="#事件流" class="headerlink" title="事件流"></a>事件流</h5><p>事件传播的顺序，这个过程叫做事件流。</p>
+<p>事件对象：浏览器兼容问题</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">e=e||<span class="variable language_">window</span>.<span class="property">event</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="阻止事件冒泡"><a href="#阻止事件冒泡" class="headerlink" title="阻止事件冒泡"></a>阻止事件冒泡</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">浏览器兼容</span><br><span class="line"><span class="keyword">if</span>（e&amp;&amp;e.<span class="property">stopPropagation</span>)&#123;</span><br><span class="line">    e.<span class="title function_">stopPropagation</span>();</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">event</span>.<span class="property">cancelBubble</span>=<span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="事件委托原理"><a href="#事件委托原理" class="headerlink" title="事件委托原理"></a>事件委托原理</h5><p>不是给每个节点单独设置监听，把事件监听设置在父元素上，利用冒泡原理影响设置每个子节点。</p>
+<h5 id="禁止复制"><a href="#禁止复制" class="headerlink" title="禁止复制"></a>禁止复制</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">contextMenu</span>:禁止右键菜单触发</span><br><span class="line"><span class="attr">selectstart</span>:禁止选择文字</span><br></pre></td></tr></table></figure>
+
+<h5 id="键盘事件"><a href="#键盘事件" class="headerlink" title="键盘事件"></a>键盘事件</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">keypress : 按下事件 ，注 不能识别功能减 ctrl等,事件对象  区分大小写</span><br><span class="line">keyup：不区分大小写</span><br><span class="line">keydown : 能识别功能建 ，不区分大小写</span><br><span class="line">顺序：keydown ---&gt;keypress----&gt;keyup</span><br></pre></td></tr></table></figure>
+
+<h3 id="Bom"><a href="#Bom" class="headerlink" title="Bom"></a>Bom</h3><table>
+<thead>
+<tr>
+<th>dom</th>
+<th>bom</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>文档对象模型<br/>DOM就是把「文档」当做一个「对象」来看待DOM的顶级对象是document<br/>DOM主要学习的是操作页面元素DOM是W3C标准规范</td>
+<td>浏览器对象模型<br/>把「浏览器」当做一个「对象」来看待BOM的顶级对象是window<br/>BOM学习的是浏览器窗口交互的一些对象<br/>BOM是浏览器厂商在各自浏监器上定义的，兼容性较差</td>
+</tr>
+</tbody></table>
+<h5 id="页面加载事件"><a href="#页面加载事件" class="headerlink" title="页面加载事件"></a>页面加载事件</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">window</span>.<span class="property">onload</span>=<span class="keyword">function</span>(<span class="params"></span>)&#123;&#125; <span class="comment">// 窗口加载事件，唯一性。 页面加载完毕后执行。addEventListerner不会有唯一性</span></span><br><span class="line"><span class="title class_">DOMContentLoaded</span>:页面加载事件事件，dom加载完毕，不包含图片falsh css 等就可以执行，加载速度比load快。</span><br></pre></td></tr></table></figure>
+
+<h5 id="调整窗口大小事件"><a href="#调整窗口大小事件" class="headerlink" title="调整窗口大小事件"></a>调整窗口大小事件</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">resize</span>:事件 <span class="comment">//完成响应式布局 获取屏幕尺寸innerWidth ，元素随着屏幕大小变化。</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="定时器"><a href="#定时器" class="headerlink" title="定时器"></a>定时器</h5><p>setTimeout() 延迟计时，只调用一次。  clearTimeout(timer) 清除   延迟计时器</p>
+<p>setInterval() 隔时间计时器 每隔一段时间反复调用函数 。setInterval(timer) 清除计时器</p>
+<h5 id="js代码执行机制"><a href="#js代码执行机制" class="headerlink" title="js代码执行机制"></a>js代码执行机制</h5><p>js执行代码时分为同步和异步任务，先把同步放到执行栈，按照先后顺序一次执行，把异步事件放到任务队列，先执行完同步再执行异步</p>
+<h5 id="事件循环"><a href="#事件循环" class="headerlink" title="事件循环"></a>事件循环</h5><p>主线程不断的重复获取任务，执行任务，再获取任务，这种机制就成为事件循环。</p>
+<h5 id="location-对象"><a href="#location-对象" class="headerlink" title="location 对象"></a>location 对象</h5><p>location. href：获取或者设置整个URL<br>location. host：返回主机(域名)<a target="_blank" rel="noopener" href="http://www.itheima.com/">www.itheima.com</a><br>location. port：返回端口号如果未写返回空字符串<br>location. pathname：返回路径<br>location. search：返回参数<br>location. hash：返回片段#后面内容常见于链接锚点</p>
+<p>location. assign(): 跟href—样，可以跳转页面（也称为重定向页面)<br>location. replace(): 替换当前页面，因为不记录历史，所以不能后退页面<br>location. reload(): 重新加载页面，相当于刷新按钮或者f5如果参数为true 强制刷新ctrl+f5</p>
+<h6 id="案例几秒后跳转页面"><a href="#案例几秒后跳转页面" class="headerlink" title="案例几秒后跳转页面"></a>案例几秒后跳转页面</h6><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> timer =<span class="number">5</span></span><br><span class="line"><span class="built_in">setInterval</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="keyword">if</span>(timer==<span class="number">0</span>)&#123;</span><br><span class="line">        location.<span class="property">href</span>=<span class="string">&#x27;网址&#x27;</span></span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        node.<span class="property">innerHtml</span>=<span class="string">`你将在<span class="subst">$&#123;timer&#125;</span>秒之后跳转页面`</span></span><br><span class="line">        timer--</span><br><span class="line">    &#125;</span><br><span class="line">&#125;,<span class="number">1000</span>)</span><br></pre></td></tr></table></figure>
+
+<h5 id="navigator对象"><a href="#navigator对象" class="headerlink" title="navigator对象"></a>navigator对象</h5><p>包含有关浏览器的信息，，userAgent返回由客户机发送还是服务器的user-agent头部的值。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//判断哪个终端打开的页面，实现跳转</span></span><br><span class="line"><span class="keyword">if</span>( (navigator. userhgent.<span class="title function_">match</span>( <span class="regexp">/(phone|pad|pod|iPhone|iPod| ios|iPad |Android|Mobile|BlackBerry|IEMobile | MQQBrowser|JUC| Fennec|wOSBrowser|BrowserNG| webos|symbian |windows Phone)/i</span>))) &#123;</span><br><span class="line"><span class="variable language_">window</span> . location. href = <span class="string">&quot;&quot;</span>;<span class="comment">//手机</span></span><br><span class="line">    )<span class="keyword">else</span> &#123;</span><br><span class="line"><span class="variable language_">window</span> . location.<span class="property">href</span> = <span class="string">&quot;&quot;</span> ;<span class="comment">//电脑</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="offset与style的区别"><a href="#offset与style的区别" class="headerlink" title="offset与style的区别"></a>offset与style的区别</h5><table>
+<thead>
+<tr>
+<th>offset</th>
+<th>style</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>offset可以得到任意样式表中的样式值<br/>offset系列获得的数值是没有单位的<br/>offsetWidth包含padding+border+ width<br/>offsetWidth等属性是只读属性，只能获取不能赋值<br/>所以，我们想要获取元素大小位置，用offset更合适</td>
+<td>style只能得到行内样式表中的样式值<br/>style.width获得的是带有单位的字符串<br/>style.width获得不包含padding和border的值style.width是可读写属性，可以获取也可以赋值<br/>所以，我们想要给元素更改值，则需要用style改变</td>
+</tr>
+</tbody></table>
+<h5 id="页面被卷去的头部兼容性解决方案"><a href="#页面被卷去的头部兼容性解决方案" class="headerlink" title="页面被卷去的头部兼容性解决方案"></a>页面被卷去的头部兼容性解决方案</h5><p>需要注意的是，页面被卷去的头部，有兼容性问题，因此被卷去的头部通常有如下几种写法∶</p>
+<p>1.声明了DTD，使用document.documentElement.scrollTop<br>⒉未声明DTD，使用document.body . scrollTop<br>3.新方法window .pageYoffset和window. pagexoffset，IE9开始支持</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">getscroll</span>(<span class="params"></span>)&#123;</span><br><span class="line"><span class="keyword">return</span> &#123;</span><br><span class="line"><span class="attr">left</span>: <span class="variable language_">window</span>.<span class="property">pagexoffset</span> || <span class="variable language_">document</span> .<span class="property">documentElement</span>.<span class="property">scrollLeft</span> || <span class="variable language_">document</span>. body .<span class="property">scrollLeftl1</span> <span class="number">0</span>,</span><br><span class="line"> <span class="attr">top</span>: <span class="variable language_">window</span>.<span class="property">pageYOffset</span> || <span class="variable language_">document</span>. documentEleEment.<span class="property">scrollTop</span> ||<span class="variable language_">document</span>.<span class="property">body</span>.<span class="property">scrollTop</span> || <span class="number">0</span>);</span><br><span class="line"><span class="comment">//使用的时候getscroll() .left</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="获取元素节点大小"><a href="#获取元素节点大小" class="headerlink" title="获取元素节点大小"></a>获取元素节点大小</h5><table>
+<thead>
+<tr>
+<th>三大系列大小对比</th>
+<th>作用</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>element.offsetWidth</td>
+<td>返回自身包括padding 、边框、内容区的宽度，返回数值不带单位</td>
+<td>获取元素位置 offsetLeft offsetTop</td>
+</tr>
+<tr>
+<td>element.clientWidth</td>
+<td>返回自身包括padding、内容区的宽度，不含边框，返回数值不带单位</td>
+<td>获取元素大小 clientWidth clientHeight</td>
+</tr>
+<tr>
+<td>element.scrollWidth</td>
+<td>返回自身实际的宽度，不含边框，返回数值不带单位</td>
+<td>获取滚动距离 scrollTop scrollLeft</td>
+</tr>
+<tr>
+<td>window.pagexoffset</td>
+<td>获取页面的滚动距离</td>
+<td></td>
+</tr>
+</tbody></table>
+<h5 id="mouseenter和mouseover的区别"><a href="#mouseenter和mouseover的区别" class="headerlink" title="mouseenter和mouseover的区别"></a>mouseenter和mouseover的区别</h5><p>mouseenter鼠标事件</p>
+<ul>
+<li>鼠标移动到元素上时就会触发mouseenter事件</li>
+<li>类似mouseover，它们两者之间的差别是</li>
+<li>mouseover鼠标经过自身盒子会触发，经过子盒子还会触发。mouseenter 只会经过自身盒子触发</li>
+<li>之所以这样，就是因为mouseenter不会冒泡，mouseleave不会冒泡</li>
+</ul>
+<h5 id="缓动效果原理"><a href="#缓动效果原理" class="headerlink" title="缓动效果原理"></a>缓动效果原理</h5><p>缓动动画就是让元素运动速度有所变化，最常见的是让速度慢慢停下来<br>思路︰</p>
+<ol>
+<li>让盒子每次移动的距离慢慢变小，速度就会慢慢落下来。</li>
+<li>核心算法:(目标值-现在的位置)&#x2F; 10做为每次移动的距离步长</li>
+<li>停止的条件是∶让当前盒了位置等于目标位置就停止定时器</li>
+</ol>
+<h6 id="缓动效果函数封装"><a href="#缓动效果函数封装" class="headerlink" title="缓动效果函数封装"></a>缓动效果函数封装</h6><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"> <span class="keyword">function</span> <span class="title function_">animate</span>(<span class="params">obj,target,callback</span>)&#123;</span><br><span class="line">     <span class="title function_">clearnInterval</span>(obj.<span class="property">timer</span>)</span><br><span class="line">     obj.<span class="property">timer</span>=<span class="built_in">setInterval</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">         <span class="keyword">var</span> step=(target-obj.<span class="property">offsetLeft</span>)/<span class="number">10</span></span><br><span class="line">        step= step&gt;<span class="number">0</span>? <span class="title class_">Math</span>.<span class="title function_">ceil</span>(step):<span class="title class_">Math</span>.<span class="title function_">floor</span>(step)</span><br><span class="line">         <span class="keyword">if</span>(obj.<span class="property">offsetLeft</span>==target)&#123;</span><br><span class="line">             <span class="title function_">clearnInterval</span>(obj.<span class="property">timer</span>)</span><br><span class="line">            <span class="comment">// if(callback)&#123;</span></span><br><span class="line">             <span class="comment">//    callback() //回调函数 动画执行完成后的操作</span></span><br><span class="line">            <span class="comment">// &#125;</span></span><br><span class="line">             callback &amp;&amp; callback（</span><br><span class="line">         &#125;</span><br><span class="line">         obj.<span class="property">style</span>.<span class="property">left</span>=obj.<span class="property">offsetLeft</span>+step+<span class="string">&#x27;px&#x27;</span></span><br><span class="line">     &#125;,<span class="number">30</span>)</span><br><span class="line"> &#125;</span><br><span class="line"><span class="title function_">animate</span>(span,<span class="number">300</span>,<span class="keyword">function</span>(<span class="params"></span>)&#123;&#125;)</span><br><span class="line"><span class="comment">//css3新特性 轮播滚动效果</span></span><br><span class="line"><span class="keyword">var</span> index=<span class="number">0</span></span><br><span class="line"><span class="keyword">var</span> timer=<span class="built_in">setInterval</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    index++</span><br><span class="line">    <span class="keyword">var</span> translatex=-index*w</span><br><span class="line">    ul.<span class="property">style</span>.<span class="property">transition</span>=<span class="string">&#x27;all .3s&#x27;</span></span><br><span class="line">    ulstyle.<span class="property">transform</span>=<span class="string">&#x27;translateX(&#x27;</span>+translatex+<span class="string">&#x27;)&#x27;</span></span><br><span class="line">&#125;,<span class="number">2000</span>)</span><br><span class="line"><span class="comment">//监听事件过度是否完成,实现无缝滚动</span></span><br><span class="line">ul.<span class="title function_">addEventListener</span>(<span class="string">&#x27;transitionend&#x27;</span>,<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="keyword">if</span>(index&gt; n =<span class="number">3</span>)&#123;</span><br><span class="line">        index=<span class="number">0</span></span><br><span class="line">        ul.<span class="property">style</span>.<span class="property">transition</span>=<span class="string">&#x27;none&#x27;</span></span><br><span class="line">        <span class="keyword">var</span> translatex=-index*w</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(index&lt;<span class="number">0</span>)&#123;</span><br><span class="line">         index=<span class="number">2</span></span><br><span class="line">        ul.<span class="property">style</span>.<span class="property">transition</span>=<span class="string">&#x27;none&#x27;</span></span><br><span class="line">        <span class="keyword">var</span> translatex=-index*w</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//classList 返回节点里面的class类名 H5新增</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="节流阀"><a href="#节流阀" class="headerlink" title="节流阀"></a>节流阀</h5><p>防止轮播图按钮连续点击造成福放过快。</p>
+<p>节流阀目的:当上一个函数动画内容执行完毕，再去执行下一个函数动画，让事件无法连续触发。核心实现思路∶利用回调函数，添加一个变呈来控制，锁住函数和解锁函数。</p>
+<p>开始设置一个变呈var flag&#x3D; true;</p>
+<p>lf(flag) {flag &#x3D;false; do something}关闭水龙头</p>
+<p>利用回调函数动画执行完毕，flag &#x3D; true打开水龙头</p>
+<h6 id="返回顶部函数封装"><a href="#返回顶部函数封装" class="headerlink" title="返回顶部函数封装"></a>返回顶部函数封装</h6><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"> <span class="keyword">function</span> <span class="title function_">animate</span>(<span class="params">obj,target,callback</span>)&#123;</span><br><span class="line">     <span class="title function_">clearnInterval</span>(obj.<span class="property">timer</span>)</span><br><span class="line">     obj.<span class="property">timer</span>=<span class="built_in">setInterval</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">         <span class="keyword">var</span> step=(target-<span class="variable language_">window</span>.<span class="property">pageYoffset</span>)/<span class="number">10</span></span><br><span class="line">        step= step&gt;<span class="number">0</span>? <span class="title class_">Math</span>.<span class="title function_">ceil</span>(step):<span class="title class_">Math</span>.<span class="title function_">floor</span>(step)</span><br><span class="line">         <span class="keyword">if</span>(<span class="variable language_">window</span>.<span class="property">pageYoffset</span>==target)&#123;</span><br><span class="line">             <span class="title function_">clearnInterval</span>(obj.<span class="property">timer</span>)</span><br><span class="line">             callback &amp;&amp; <span class="title function_">callback</span>()<span class="comment">//回调函数 动画执行完成后的操作</span></span><br><span class="line">         &#125;</span><br><span class="line">       </span><br><span class="line">         <span class="variable language_">window</span>,<span class="title function_">scroll</span>(<span class="number">0</span>,<span class="variable language_">window</span>.<span class="property">pageYoffset</span>+step)</span><br><span class="line">     &#125;,<span class="number">30</span>)</span><br><span class="line"> &#125;</span><br><span class="line"><span class="title function_">animate</span>(<span class="variable language_">window</span>,<span class="number">300</span>,)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h6 id="金斗云案例"><a href="#金斗云案例" class="headerlink" title="金斗云案例"></a>金斗云案例</h6><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h5><h6 id="触摸事件对象-TouchEvent"><a href="#触摸事件对象-TouchEvent" class="headerlink" title="触摸事件对象(TouchEvent)"></a>触摸事件对象(TouchEvent)</h6><p>TouchEvent 是一类描述手指在触摸平面(触摸屏、触莫板等)的状态变化的事件。这类事件用于描述一个或多个触点，使开发者可以检测触点的移动，触点的增加和减少，等等touchstart、touchmove、touchend 三个事件都会各自有事件对象触摸事件对象重点我们看三个常见对象列表:</p>
+<table>
+<thead>
+<tr>
+<th>触摸列表</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>touches</td>
+<td>正在触摸屏幕的所有手指的一个列表</td>
+</tr>
+<tr>
+<td>targetTouches</td>
+<td>正在触摸当前 DOM 元素上的手指的一个列表</td>
+</tr>
+<tr>
+<td>changedTouches</td>
+<td>手指状态发生了改变的列表，从无到有，从有到无变化</td>
+</tr>
+</tbody></table>
+<p>因为平时我们都是给元索注册触摸事件，所以重点记住targetTocuh</p>
+<h5 id="移动端300毫秒click延时解决方案"><a href="#移动端300毫秒click延时解决方案" class="headerlink" title="移动端300毫秒click延时解决方案"></a>移动端300毫秒click延时解决方案</h5><p>移动端click事件会有300ms的延时，原因是移动端屏幕双击会缩放(double tap to zoom)页面。</p>
+<p>解决方案︰<br>1.禁用缩放。浏览器禁用默认的双击缩放行为并且去掉300ms的点击延迟。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=<span class="string">&quot;viewport&quot;</span> content=<span class="string">&quot;user-scalable=no&quot;</span>&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>2.利用touch事件自己封装这个事件解决300ms延迟。</p>
+<p>原理：</p>
+<ul>
+<li>当我们手指触摸屏幕，记录当前触摸时间</li>
+<li>当我们手指离开屏幕，用离开的时间减去触摸的时间</li>
+<li>如果时间小于150ms，并且没有滑动过屏幕，那么我们就定义为点击</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//封装tap，解决click 300ms 延时</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">tap</span> (obj, cal1back) &#123;</span><br><span class="line"><span class="keyword">var</span> isMove =<span class="literal">false</span>;</span><br><span class="line"><span class="keyword">var</span> startTine = <span class="number">0</span>; <span class="comment">//记录触摸时候的时间变量</span></span><br><span class="line">obj.<span class="property">addEventListener</span> ( <span class="string">&#x27;touchstart &#x27;</span>, <span class="keyword">function</span> (<span class="params">e</span>) &#123;</span><br><span class="line">startTime = <span class="title class_">Date</span>.<span class="property">now</span> ( ); <span class="comment">//记录触摸时间</span></span><br><span class="line">);</span><br><span class="line">obj.<span class="property">addEventListener</span> ( <span class="string">&#x27;touchmove&#x27;</span> , <span class="keyword">function</span> (<span class="params">e</span>) &#123;</span><br><span class="line">isMove = <span class="literal">true</span>; <span class="comment">//看看是否有滑动，有滑动算拖拽，不算点击</span></span><br><span class="line">&#125;) ;</span><br><span class="line">obj.<span class="property">addEventListener</span> ( <span class="string">&#x27;touchend &#x27;</span> , <span class="keyword">function</span> (<span class="params">e</span>) &#123;</span><br><span class="line"><span class="keyword">if</span> (!isNove &amp;&amp; (<span class="title class_">Date</span>.<span class="property">now</span> () - startTime)&lt;<span class="number">150</span>)&#123; <span class="comment">//如果手指触摸和离开时间小于150ms 算点击</span></span><br><span class="line">    callback &amp;&amp; <span class="title function_">callback</span>(); <span class="comment">//执行回调函数</span></span><br><span class="line">&#125;</span><br><span class="line">isMove = <span class="literal">false</span>; <span class="comment">//取反重置</span></span><br><span class="line">startTime = o;</span><br><span class="line">]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//调用</span></span><br><span class="line"><span class="title function_">tap</span>(div,<span class="keyword">function</span>(<span class="params"></span>) &#123;村行代和<span class="number">1</span>:&#125;)</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>3.利用插件</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">https</span>:<span class="comment">//github.com/ftlabs/fastclick</span></span><br><span class="line"><span class="comment">//去复制</span></span><br><span class="line"><span class="comment">//参考文档使用</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="swiper插件使用"><a href="#swiper插件使用" class="headerlink" title="swiper插件使用"></a>swiper插件使用</h5><p>swiper.com.cn 网址</p>
+<ol>
+<li><p>下载swiper压缩包（里面是各种轮播图的文件）</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">引入样式和js文件</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>按照规定语法使用</p>
+<p>复制相应代码</p>
+</li>
+</ol>
+<h5 id="移动端常见的插件"><a href="#移动端常见的插件" class="headerlink" title="移动端常见的插件"></a>移动端常见的插件</h5><p>superslide:<a target="_blank" rel="noopener" href="http://www.superslide2.com/">http://www.superslide2.com/</a></p>
+<p>iscroll: <a target="_blank" rel="noopener" href="https://github.com/cubiq/iscroll">https://github.com/cubiq/iscroll</a></p>
+<p>视频插件：zy.media.js 解决浏览器风格统一</p>
+<p>常见的JavaScript库jQuery<br>PrototypeYuI<br>DojoExtJS<br>移动端的zepto<br>这些库都是对原生JavaScript的封装，内部都是用JavaScript实现的，我们主要学习的是jQuery.</p>
+<h3 id="jquery"><a href="#jquery" class="headerlink" title="jquery"></a>jquery</h3><p> jQuery对象和DOM对象</p>
+<p>DOM对象与jQuery对象之间是可以相互转换的。</p>
+<p>因为原生js 比jQuery更大，原生的一些属性和方法jQuery没有给我们封装.要想使用这些属性和方法需要把jQuery对象转换为DOM对象才能使用。</p>
+<p>1.DOM对象转换为jQuery对象︰$(DOM对象)</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">&#x27;div&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>jQuery对象转换为DOM对象（两种方式)</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">&#x27;div&#x27;</span>) [index]index是索引号</span><br><span class="line"></span><br><span class="line">$(<span class="string">&#x27;div&#x27;</span>) .<span class="title function_">get</span>(index)index是索引号</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h6 id="修改节点样式"><a href="#修改节点样式" class="headerlink" title="修改节点样式"></a>修改节点样式</h6><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">&#x27;div&#x27;</span>).<span class="title function_">css</span>(<span class="string">&#x27;color&#x27;</span>,<span class="string">&#x27;red&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h6 id="筛选器"><a href="#筛选器" class="headerlink" title="筛选器"></a>筛选器</h6><table>
+<thead>
+<tr>
+<th>语法</th>
+<th>用法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>:first</td>
+<td>$(“li:first’)</td>
+<td>获取第一个li元素</td>
+</tr>
+<tr>
+<td>:last</td>
+<td>$(“li:last’)</td>
+<td>获取最后一个li元素</td>
+</tr>
+<tr>
+<td>:eq(index)</td>
+<td>$(“li:eq(2)”)</td>
+<td>获取到的li元素中，选择索引号为2的元素，索引号index从0开始。</td>
+</tr>
+<tr>
+<td>:odd</td>
+<td>$(“li:odd”)</td>
+<td>获取到的li元素中，选择索引号为奇数的元素</td>
+</tr>
+<tr>
+<td>:even</td>
+<td>$(“li even”)</td>
+<td>获取到的li元素中，选择索引号为偶数的元素</td>
+</tr>
+</tbody></table>
+<h6 id="筛选方法"><a href="#筛选方法" class="headerlink" title="筛选方法"></a>筛选方法</h6><table>
+<thead>
+<tr>
+<th>语法</th>
+<th>用法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>parent()</td>
+<td>$(“li”) . parent();</td>
+<td>查找父级</td>
+</tr>
+<tr>
+<td>children(selector)</td>
+<td>$(“”ul”).children(“”li”)</td>
+<td>相当于(“ul&gt;li”)，最近一级（亲儿子)</td>
+</tr>
+<tr>
+<td>find(selector)</td>
+<td>s(“u1”).find(“1i”);</td>
+<td>相当于$(“ul li””),后代选择器</td>
+</tr>
+<tr>
+<td>siblings(selector)</td>
+<td>$(“.first”).siblings(“li”);</td>
+<td>查找兄弟节点，不包括自己本身</td>
+</tr>
+<tr>
+<td>nextAll([expr])</td>
+<td>$(“”.first”) .nextAll()</td>
+<td>查找当前元素之后所有的同辈元素</td>
+</tr>
+<tr>
+<td>prevtAll([expr]）</td>
+<td>$(“”.last”) . prevAll()</td>
+<td>查找当前元素之前所有的同辈元素</td>
+</tr>
+<tr>
+<td>hasclass(class)</td>
+<td>$( “div ‘). hasClass(“protected””)</td>
+<td>果有，则返回true</td>
+</tr>
+<tr>
+<td>eq(index)</td>
+<td>$(“”li”).eq(2);</td>
+<td>相当于$(“li:ea(2)”) ,index从0开始</td>
+</tr>
+</tbody></table>
+<h5 id="设置类样式方法"><a href="#设置类样式方法" class="headerlink" title="设置类样式方法"></a>设置类样式方法</h5><p>1.添加类</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">&quot;div&quot;</span> ).<span class="title function_">addClass</span>(<span class="string">&quot;&quot;</span>current<span class="string">&quot;&quot;</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>2.移除类</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">&quot;div&quot;</span> ).<span class="title function_">rermoveClass</span>(<span class="string">&quot;current&quot;</span><span class="string">&quot;)</span></span><br><span class="line"><span class="string"></span></span><br></pre></td></tr></table></figure>
+
+<p>3．切换类</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$( <span class="string">&quot;div&quot;</span> ).<span class="title function_">toggleClass</span>(<span class="string">&quot;current&#x27;)</span></span><br><span class="line"><span class="string"></span></span><br></pre></td></tr></table></figure>
+
+<h5 id="动画效果"><a href="#动画效果" class="headerlink" title="动画效果"></a>动画效果</h5><table>
+<thead>
+<tr>
+<th>显示隐藏</th>
+<th>滑动</th>
+<th>淡入淡出</th>
+<th>自定义动画</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>show()<br/>hide()<br/>toggle()</td>
+<td>slideDown()<br/>slideUp<br/>slideToggle()</td>
+<td>fadeIn()<br/>fadeOut()<br/>fadeToggle()<br/>fadeTo()</td>
+<td>animate()</td>
+</tr>
+</tbody></table>
+<h5 id="动画队列及其停止排队方法1-动画或效果队列"><a href="#动画队列及其停止排队方法1-动画或效果队列" class="headerlink" title="动画队列及其停止排队方法1.动画或效果队列"></a>动画队列及其停止排队方法1.动画或效果队列</h5><p>动画或者效果一旦触发就会执行，如果多次触发，就造成多个动画或者效果排队执行</p>
+<p>.停止排队</p>
+<p>stop()</p>
+<p>(1 ) stop()方法用于停止动画或效果。</p>
+<p>(2注意: stop()写到动画或者效果的前面，相当于停止结束上一次的动画。</p>
+<h5 id="尺寸位置操作"><a href="#尺寸位置操作" class="headerlink" title="尺寸位置操作"></a>尺寸位置操作</h5><table>
+<thead>
+<tr>
+<th>语法</th>
+<th>用法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>width() &#x2F; height()</td>
+<td>取得匹配元素宽度和高度值只算width &#x2F; height</td>
+</tr>
+<tr>
+<td>innerWidth() ! innerHieght()</td>
+<td>取得匹配元素宽度和高度值包含padding</td>
+</tr>
+<tr>
+<td>outerWidth() &#x2F; outerHeight(</td>
+<td>取得匹配元素宽度和高度值包含padding . border</td>
+</tr>
+<tr>
+<td>outerWidth(true) &#x2F; outerHeight(true)</td>
+<td>取得匹配元素宽度和高度值包含 padding . borde、margin</td>
+</tr>
+</tbody></table>
+<h6 id="位置"><a href="#位置" class="headerlink" title="位置"></a>位置</h6><p>主要有三个: offset0、 position0、 scrollTop0&#x2F;scrollLeft0</p>
+<ol>
+<li>position0 ：获取盒子到带有定位父级的位置，只能获取</li>
+<li>scrollTop0&#x2F;scrollLeft0 ：相对文档被卷去的头部</li>
+<li>offset()设置或获取元素偏移</li>
+</ol>
+<p>offset()方法设置或返回被选元素相对于文档的偏移坐标，跟父级没有关系。</p>
+<h5 id="电梯导航（左右联动）"><a href="#电梯导航（左右联动）" class="headerlink" title="电梯导航（左右联动）"></a>电梯导航（左右联动）</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="jQuery对象拷贝"><a href="#jQuery对象拷贝" class="headerlink" title="jQuery对象拷贝"></a>jQuery对象拷贝</h5><p>如果想要把某个对象拷贝（合并）给另外一个对象使用，此时可以使用$.extend ()方法</p>
+<p>语法︰</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s .<span class="property">extend</span> ( [deep], target,object1,[objectN])</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p>deep:如果设为true为深拷贝，默认为false 浅拷贝</p>
+</li>
+<li><p>target:要拷贝的目标对象</p>
+</li>
+<li><p>object1:待拷贝到第一个对象的对象</p>
+</li>
+</ol>
+<h6 id="jquery插件库（瀑布流插件）"><a href="#jquery插件库（瀑布流插件）" class="headerlink" title="jquery插件库（瀑布流插件）"></a>jquery插件库（瀑布流插件）</h6><p>jquery插件之家：<a target="_blank" rel="noopener" href="http://www.htmleaf.com/">http://www.htmleaf.com/</a></p>
+<p>jQuery插件库：<a target="_blank" rel="noopener" href="http://www.jq22.com/">http://www.jq22.com/</a></p>
+<p>全屏滚动：fullpage.js</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/advarotrigo/fullPage.js">https://github.com/advarotrigo/fullPage.js</a></p>
+<p>中文翻译网站: <a target="_blank" rel="noopener" href="http://www.dowebok.com/demo/2014/77/">http://www.dowebok.com/demo/2014/77/</a></p>
+<p>瀑布流：响应式，间隔啥的一次向下展示，不考虑空袭。</p>
+<h5 id="提高网页性能懒加载"><a href="#提高网页性能懒加载" class="headerlink" title="提高网页性能懒加载"></a>提高网页性能懒加载</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//只显示看到的图片</span></span><br><span class="line">当图片滑动到可视区，图片加载</span><br><span class="line"><span class="comment">//方法一jquery插件 jQuery插件库</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="数据可视化"><a href="#数据可视化" class="headerlink" title="数据可视化"></a>数据可视化</h3><h5 id="数据可视化插件"><a href="#数据可视化插件" class="headerlink" title="数据可视化插件"></a>数据可视化插件</h5><ol>
+<li>D3.js目前Web 端评价最高的Javascript 可视化工具库(入手难)</li>
+<li>ECharts.js百度出品的一个开源Javascript 数据可视化库</li>
+<li>Highcharts.js国外的前端数据可视化库，非商用免费，被许多国外大公司所使用。</li>
+<li>Antv蚂蚁金服全新一代数据可视化解决方案<br>公。</li>
+</ol>
+<h5 id="五部曲"><a href="#五部曲" class="headerlink" title="五部曲"></a>五部曲</h5><ol>
+<li>下载引入</li>
+<li>转杯dom容器</li>
+<li>初始化实例对象</li>
+<li>指定配置向和数据</li>
+<li>将配置项设置给echarts实例对象</li>
+</ol>
+<h5 id="相关配置"><a href="#相关配置" class="headerlink" title="相关配置"></a>相关配置</h5><p>title:标题组件</p>
+<p>tooltip:提示框组件</p>
+<p>legend:图例组件</p>
+<p>toolbox:工具栏</p>
+<p>grid:直角坐标系内绘图网格</p>
+<p>xAxis:直角坐标系grid中的x轴</p>
+<p>yAxis :直角坐标系grid中的y轴</p>
+<p>series:系列列表。每个系列通过type决定自己的图表类型(什么类型的图标)</p>
+<p>color:调色盘颜色列表</p>
+<h5 id="定制图表"><a href="#定制图表" class="headerlink" title="定制图表"></a>定制图表</h5><p>.</p>
+<h4 id="项目经验"><a href="#项目经验" class="headerlink" title="项目经验"></a>项目经验</h4><h5 id="createPortal实现自定义弹框？"><a href="#createPortal实现自定义弹框？" class="headerlink" title="createPortal实现自定义弹框？"></a>createPortal实现自定义弹框？</h5><p>react: 传送门createPortal</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">在初始根文件夹创建一个div</span><br><span class="line">&lt;div id=<span class="string">&#x27;app&#x27;</span>&gt;&lt;/div&gt;</span><br><span class="line">创建一个组件文件夹</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">function</span> <span class="title function_">showModal</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="title function_">createPortal</span>(</span><br><span class="line">     <span class="language-xml"><span class="tag">&lt;<span class="name">div</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">      <span class="attr">style</span>=<span class="string">&#123;&#123;</span> <span class="attr">display:</span> <span class="attr">stage</span> === <span class="string">0</span> ? &quot;<span class="attr">none</span>&quot; <span class="attr">:</span> &quot;<span class="attr">block</span>&quot; &#125;&#125; // <span class="attr">判断是否显示modal</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">      <span class="attr">className</span>=<span class="string">&#x27;fixed left-0 top-0 w-screen h-screen&#x27;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">    &gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">div</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">        <span class="attr">className</span>=<span class="string">&#x27;absolute left-0 top-0 w-screen h-screen bg-black/20 transition-all&#x27;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">        <span class="attr">style</span>=<span class="string">&#123;&#123;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">          <span class="attr">opacity:</span> <span class="attr">stage</span> === <span class="string">2</span> ? <span class="attr">1</span> <span class="attr">:</span> <span class="attr">0</span>,</span></span></span><br><span class="line"><span class="tag"><span class="language-xml">        &#125;&#125;</span></span></span><br><span class="line"><span class="tag"><span class="language-xml">        <span class="attr">onClick</span>=<span class="string">&#123;()</span> =&gt;</span> &#123;</span></span><br><span class="line"><span class="language-xml">          if (showSelection) &#123;</span></span><br><span class="line"><span class="language-xml">            setShowSelection(false);</span></span><br><span class="line"><span class="language-xml">          &#125; else &#123;</span></span><br><span class="line"><span class="language-xml">            close();</span></span><br><span class="line"><span class="language-xml">          &#125;</span></span><br><span class="line"><span class="language-xml">        &#125;&#125;</span></span><br><span class="line"><span class="language-xml">      &gt;<span class="tag">&lt;/<span class="name">div</span>&gt;</span> //背景蒙层</span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">div</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">        <span class="attr">className</span>=<span class="string">&#x27;absolute left-1/2 top-1/3 z-10 transition-all&#x27;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">        <span class="attr">style</span>=<span class="string">&#123;&#123;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">          <span class="attr">transform:</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">            <span class="attr">stage</span> === <span class="string">1</span> ? &quot;<span class="attr">translate</span>(<span class="attr">-50</span>%,<span class="attr">-60</span>%)&quot; <span class="attr">:</span> &quot;<span class="attr">translate</span>(<span class="attr">-50</span>%,<span class="attr">-50</span>%)&quot;,</span></span></span><br><span class="line"><span class="tag"><span class="language-xml">            <span class="attr">opacity:</span> <span class="attr">stage</span> === <span class="string">2</span> ? <span class="attr">1</span> <span class="attr">:</span> <span class="attr">0</span>,</span></span></span><br><span class="line"><span class="tag"><span class="language-xml">        &#125;&#125;</span></span></span><br><span class="line"><span class="tag"><span class="language-xml">      &gt;</span></span></span><br><span class="line"><span class="language-xml">       //居中的弹框</span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">        </span><br><span class="line">        ，<span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;#app&#x27;</span>)!)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>vue:安装插件‘portal-vue’</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">yarn add portal-vue</span><br><span class="line">在入口文件引入</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">PortalVue</span> <span class="keyword">from</span> <span class="string">&#x27;portal-vue&#x27;</span></span><br><span class="line"><span class="title class_">Vue</span>.<span class="title function_">use</span>(<span class="title class_">PortalVue</span>)</span><br><span class="line">编写组件</span><br><span class="line">&lt;portal to=<span class="string">&#x27;app&#x27;</span>&gt;</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line">&lt;/portal&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">portal-target</span> <span class="attr">name</span>=<span class="string">&#x27;app&#x27;</span>&gt;</span><span class="tag">&lt;/<span class="name">portal-target</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>官网</p>
+<h5 id="浏览器兼容性"><a href="#浏览器兼容性" class="headerlink" title="浏览器兼容性"></a>浏览器兼容性</h5><ol>
+<li><p>火狐点击链接出现虚线框</p>
+<p>解决：在A标签上outline:none；a:focus{outline:none}</p>
+</li>
+<li><p>ie6不能定义1px左右宽度的容器</p>
+<p>解决：设置line-height:1px;overflow:hidden;zoom:0.008</p>
+</li>
+<li><p>cursor:hand 显示手型在safari上不支持</p>
+<p>解决：统一使用cursor:pointer</p>
+</li>
+</ol>
+<h5 id="浏览器布局有哪些？（流式布局和响应式布局）"><a href="#浏览器布局有哪些？（流式布局和响应式布局）" class="headerlink" title="浏览器布局有哪些？（流式布局和响应式布局）"></a>浏览器布局有哪些？（流式布局和响应式布局）</h5><p>静态页面布局： 表格布局，层布局，div+css样式表布局 一律使用px作为单位</p>
+<p>流式布局：使用百分比定义宽度，高度大都是用px来固定 。缺点：屏幕跨度太大造成显示不协调。代表作栅格系统，网格系统。</p>
+<p>自适应布局：使用@media给不同尺寸设置不同静态布局</p>
+<p>响应式布局：综合流式布局加媒体查询加栅格布局加css3</p>
+<p>弹性布局：（rem&#x2F;em布局）1rem&#x3D;16px  rem&#x2F;em做单位可以支持字体大小调整和缩放等正常显示</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">YOL</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://liyue885.gitHub.io/2023/12/10/js2/">http://liyue885.gitHub.io/2023/12/10/js2/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">YOL</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2023/12/10/js2/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="js2">
+                        
+                        <span class="card-title">js2</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-12-10
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            YOL
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/11/18/nvm-1/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="nvm">
+                        
+                        <span class="card-title">nvm</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-11-18
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            YOL
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2023</span>
+            
+            <a href="/about" target="_blank">YOL</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            <br>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1438233414" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1438233414" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+    
+    
+
+    <!-- 雪花特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/snow.js"><\/script>');
+            }
+        </script>
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
