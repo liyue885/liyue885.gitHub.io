@@ -4,12 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="next.js, Yol">
-    <meta name="description" content="next.jspages:存放页面
-public：存放静态图片
-styles:存放样式 ，局部样式 XX.module.css
-动态路由：在pages下创建文件夹
-12345678posts---[id].jsimport &amp;#123;us">
+    <meta name="keywords" content="sreenAdeptation, Yol">
+    <meta name="description" content="vue3 +ts+vite适配一、安装依赖12//安装依赖npm i postcss-pxtorem autoprefixer amfe-flexible -S
+
+二、配置vite.config.ts12345678910111213141">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +19,7 @@ styles:存放样式 ，局部样式 XX.module.css
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>next.js | Yol</title>
+    <title>sreenAdeptation | Yol</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -272,12 +270,12 @@ styles:存放样式 ，局部样式 XX.module.css
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">next.js</h1>
+                    <h1 class="description center-align post-title">sreenAdeptation</h1>
                 </div>
             </div>
         </div>
@@ -313,7 +311,7 @@ styles:存放样式 ，局部样式 XX.module.css
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-11-13
+                    2024-05-26
                 </div>
                 
 
@@ -334,17 +332,11 @@ styles:存放样式 ，局部样式 XX.module.css
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="next-js"><a href="#next-js" class="headerlink" title="next.js"></a>next.js</h1><p>pages:存放页面</p>
-<p>public：存放静态图片</p>
-<p>styles:存放样式 ，局部样式 XX.module.css</p>
-<p>动态路由：在pages下创建文件夹</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">posts</span><br><span class="line">---[id].<span class="property">js</span></span><br><span class="line"><span class="keyword">import</span> &#123;useRouter&#125; <span class="keyword">from</span> <span class="string">&#x27;next/router&#x27;</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="title class_">Post</span>=<span class="function">()=&gt;</span>&#123;</span><br><span class="line"><span class="keyword">const</span> router=<span class="title function_">useRouter</span>()</span><br><span class="line"><span class="keyword">const</span> &#123;id&#125;=router.<span class="property">query</span></span><br><span class="line"><span class="keyword">return</span> &lt;p&gt;<span class="title class_">Post</span>:&#123;id&#125;&lt;/P&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+                <h1 id="vue3-ts-vite适配"><a href="#vue3-ts-vite适配" class="headerlink" title="vue3 +ts+vite适配"></a>vue3 +ts+vite适配</h1><h2 id="一、安装依赖"><a href="#一、安装依赖" class="headerlink" title="一、安装依赖"></a>一、安装依赖</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//安装依赖</span></span><br><span class="line">npm i postcss-pxtorem autoprefixer amfe-flexible -S</span><br></pre></td></tr></table></figure>
 
-<p>ssr&#x2F;ssg</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//服务段喧染，运行实际 服务端请求的时候request</span></span><br><span class="line"><span class="title function_">getServerSideProps</span>() </span><br><span class="line"><span class="comment">//服务端生成, 生成静态页面的时候运行，启动程序之前</span></span><br><span class="line"><span class="title function_">getStaticProps</span>()</span><br><span class="line"><span class="title function_">getStaticPaths</span>() <span class="comment">//枚举用户访问到的各种id</span></span><br></pre></td></tr></table></figure>
+<h2 id="二、配置vite-config-ts"><a href="#二、配置vite-config-ts" class="headerlink" title="二、配置vite.config.ts"></a>二、配置vite.config.ts</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//引入依赖</span></span><br><span class="line"><span class="keyword">import</span> autoprefixer <span class="keyword">from</span> <span class="string">&quot;autoprefixer&quot;</span></span><br><span class="line"><span class="keyword">import</span> postcsspxtorem <span class="keyword">from</span> <span class="string">&quot;postcss-pxtorem&quot;</span></span><br><span class="line"> </span><br><span class="line"><span class="comment">//配置适配方案</span></span><br><span class="line"><span class="attr">css</span>: &#123;</span><br><span class="line">  <span class="attr">postcss</span>: &#123;</span><br><span class="line">    <span class="attr">plugins</span>: [</span><br><span class="line">      <span class="title function_">autoprefixer</span>(&#123;</span><br><span class="line">        <span class="attr">overrideBrowserslist</span>: [</span><br><span class="line">          <span class="string">&quot;Android 4.1&quot;</span>,</span><br><span class="line">          <span class="string">&quot;iOS 7.1&quot;</span>,</span><br><span class="line">          <span class="string">&quot;Chrome &gt; 31&quot;</span>,</span><br><span class="line">          <span class="string">&quot;ff &gt; 31&quot;</span>,</span><br><span class="line">          <span class="string">&quot;ie &gt;= 8&quot;</span>,</span><br><span class="line">          <span class="string">&quot;last 10 versions&quot;</span>, <span class="comment">// 所有主流浏览器最近10版本用</span></span><br><span class="line">        ],</span><br><span class="line">        <span class="attr">grid</span>: <span class="literal">true</span></span><br><span class="line">      &#125;),</span><br><span class="line">      <span class="title function_">postcsspxtorem</span>(&#123;</span><br><span class="line">        <span class="attr">rootValue</span>: <span class="number">192</span>, <span class="comment">// 设计稿宽度的1/ 10 例如设计稿按照 1920设计 此处就为192</span></span><br><span class="line">        <span class="attr">propList</span>: [<span class="string">&quot;*&quot;</span>, <span class="string">&quot;!border&quot;</span>], <span class="comment">// 除 border 外所有px 转 rem</span></span><br><span class="line">        <span class="attr">selectorBlackList</span>: [<span class="string">&quot;.el-&quot;</span>], <span class="comment">// 过滤掉.el-开头的class，不进行rem转换</span></span><br><span class="line">      &#125;)</span><br><span class="line">    ],</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>ISR增量静态生成</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//自动触发</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">getStaticProps</span>(<span class="params">context</span>)&#123;</span><br><span class="line">    <span class="keyword">const</span> &#123;id&#125;=context.<span class="property">params</span></span><br><span class="line">    <span class="keyword">const</span> res=请求</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        <span class="attr">props</span>:&#123;<span class="attr">data</span>:res&#125;,</span><br><span class="line">        <span class="attr">revalidate</span>:<span class="number">10</span> （时间秒）<span class="comment">//自动的重新生成 10秒钟后还没生成就重新请求生成，</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//手动触发</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> agync <span class="keyword">function</span> <span class="title function_">handler</span>(<span class="params">req,res</span>)&#123;</span><br><span class="line">    <span class="keyword">if</span>(req.<span class="property">query</span>.<span class="property">secret</span>!===<span class="string">&#x27;a&#x27;</span>&#123;</span><br><span class="line">       <span class="keyword">return</span> res.<span class="title function_">status</span>(<span class="number">401</span>).<span class="title function_">json</span>(&#123;<span class="attr">message</span>:<span class="string">&quot;inite&quot;</span>&#125;)</span><br><span class="line">       &#125;)</span><br><span class="line">     <span class="keyword">try</span>&#123;</span><br><span class="line">         <span class="keyword">await</span> res.<span class="title function_">revalidate</span>(“请求路径”，)</span><br><span class="line">         <span class="keyword">return</span> res.<span class="title function_">json</span>(&#123;<span class="attr">revalidate</span>:<span class="literal">true</span>&#125;)</span><br><span class="line">     &#125;<span class="keyword">catch</span>(err)&#123;</span><br><span class="line">         <span class="keyword">return</span> res.<span class="title function_">status</span>(<span class="number">500</span>).<span class="title function_">send</span>(<span class="string">&#x27;Error&#x27;</span>)</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="三、main-js导入依赖"><a href="#三、main-js导入依赖" class="headerlink" title="三、main.js导入依赖"></a>三、main.js导入依赖</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">&quot;amfe-flexible/index.js&quot;</span>;</span><br></pre></td></tr></table></figure>
 
 
                 
@@ -372,7 +364,7 @@ styles:存放样式 ，局部样式 XX.module.css
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://liyue885.gitHub.io/2023/11/13/next-js/">http://liyue885.gitHub.io/2023/11/13/next-js/</a>
+                    <a href="http://liyue885.gitHub.io/2024/05/26/sreenAdeptation/">http://liyue885.gitHub.io/2024/05/26/sreenAdeptation/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -486,54 +478,18 @@ styles:存放样式 ，局部样式 XX.module.css
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2023/11/18/nvm-1/">
+                <a href="/2024/05/26/sreenAdeptation/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="nvm">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="sreenAdeptation">
                         
-                        <span class="card-title">nvm</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-11-18
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            YOL
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2023/11/12/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="hexo使用命令">
-                        
-                        <span class="card-title">hexo使用命令</span>
+                        <span class="card-title">sreenAdeptation</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -544,7 +500,45 @@ styles:存放样式 ，局部样式 XX.module.css
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-11-12
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-26
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            YOL
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2024/05/14/vue3/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="vue3">
+                        
+                        <span class="card-title">vue3</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-14
                             </span>
                         <span class="publish-author">
                             
